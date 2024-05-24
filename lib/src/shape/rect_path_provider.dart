@@ -1,5 +1,4 @@
 import '../../neumorphic_ui.dart';
-import 'neumorphic_path_provider.dart';
 
 class RectPathProvider extends NeumorphicPathProvider {
   const RectPathProvider({Listenable? reclip});

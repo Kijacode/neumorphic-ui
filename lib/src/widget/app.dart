@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:neumorphic_ui/neumorphic_ui.dart';
 
 class NeumorphicApp extends StatelessWidget {

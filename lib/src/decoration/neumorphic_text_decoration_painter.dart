@@ -1,6 +1,5 @@
 import 'dart:ui' as ui;
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
@@ -25,7 +24,7 @@ class NeumorphicDecorationTextPainter extends BoxPainter {
   final TextStyle textStyle;
   final TextAlign textAlign;
 
-  NeumorphicPainterCache _cache;
+  final NeumorphicPainterCache _cache;
 
   late Paint _backgroundPaint;
   late Paint _whiteShadowPaint;

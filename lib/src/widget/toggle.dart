@@ -1,10 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:neumorphic_ui/neumorphic_ui.dart';
-
-import '../neumorphic_box_shape.dart';
-import '../theme/neumorphic_theme.dart';
-import 'container.dart';
 
 class NeumorphicToggleStyle {
   final double? depth;

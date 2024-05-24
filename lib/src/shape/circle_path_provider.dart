@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import '../../neumorphic_ui.dart';
-import 'neumorphic_path_provider.dart';
 
 class CirclePathProvider extends NeumorphicPathProvider {
   const CirclePathProvider({Listenable? reclip});

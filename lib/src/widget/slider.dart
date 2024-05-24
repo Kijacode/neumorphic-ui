@@ -1,8 +1,5 @@
-import 'package:flutter/widgets.dart';
 import 'package:neumorphic_ui/neumorphic_ui.dart';
 
-import 'container.dart';
-import 'progress.dart';
 
 typedef void NeumorphicSliderListener(double percent);
 

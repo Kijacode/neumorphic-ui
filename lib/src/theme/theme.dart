@@ -1,15 +1,6 @@
 import 'dart:ui';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart' show IconThemeData, TextTheme;
-import 'package:flutter/painting.dart';
-import 'package:neumorphic_ui/src/theme/app_bar.dart';
-import 'package:neumorphic_ui/src/widget/container.dart';
-
 import '../../neumorphic_ui.dart';
-import '../colors.dart';
-import '../light_source.dart';
-import '../shape.dart';
 
 export '../colors.dart';
 export '../light_source.dart';
@@ -55,6 +46,7 @@ class NeumorphicThemeData {
   final Color shadowDarkColorEmboss;
 
   final NeumorphicBoxShape? _boxShape;
+
   NeumorphicBoxShape get boxShape =>
       _boxShape ?? NeumorphicBoxShape.roundRect(BorderRadius.circular(8));
   final Color borderColor;

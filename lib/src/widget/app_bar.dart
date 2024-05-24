@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:neumorphic_ui/neumorphic_ui.dart';
-import 'package:neumorphic_ui/src/widget/back_button.dart';
 
 class NeumorphicAppBar extends StatefulWidget implements PreferredSizeWidget {
   static const toolbarHeight = kToolbarHeight + 16 * 2;
@@ -103,8 +100,9 @@ class NeumorphicAppBar extends StatefulWidget implements PreferredSizeWidget {
   NeumorphicAppBarState createState() => NeumorphicAppBarState();
 
   bool _getEffectiveCenterTitle(ThemeData theme, NeumorphicThemeData nTheme) {
-    if (centerTitle != null || nTheme.appBarTheme.centerTitle != null)
+    if (centerTitle != null || nTheme.appBarTheme.centerTitle != null) {
       return centerTitle ?? nTheme.appBarTheme.centerTitle!;
+    }
     switch (theme.platform) {
       case TargetPlatform.android:
       case TargetPlatform.fuchsia:
@@ -152,21 +150,18 @@ class NeumorphicAppBarState extends State<NeumorphicAppBar> {
         leading = NeumorphicButton(
           padding: widget.buttonPadding,
           style: widget.buttonStyle,
-          child: nTheme?.current?.appBarTheme.icons.menuIcon,
           onPressed: _handleDrawerButton,
           tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+          child: nTheme?.current?.appBarTheme.icons.menuIcon,
         );
       } else {
-        if (canPop)
+        if (canPop) {
           leading = useCloseButton
               ? NeumorphicCloseButton(
-                  padding: widget.buttonPadding,
-                  style: widget.buttonStyle,
-                )
+                  padding: widget.buttonPadding, style: widget.buttonStyle)
               : NeumorphicBackButton(
-                  padding: widget.buttonPadding,
-                  style: widget.buttonStyle,
-                );
+                  padding: widget.buttonPadding, style: widget.buttonStyle);
+        }
       }
     }
     if (leading != null) {
@@ -212,9 +207,9 @@ class NeumorphicAppBarState extends State<NeumorphicAppBar> {
         child: NeumorphicButton(
           padding: widget.buttonPadding,
           style: widget.buttonStyle,
-          child: nTheme?.current?.appBarTheme.icons.menuIcon,
           onPressed: _handleDrawerButtonEnd,
           tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+          child: nTheme?.current?.appBarTheme.icons.menuIcon,
         ),
       );
     }

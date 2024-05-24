@@ -1,8 +1,5 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
 import 'package:neumorphic_ui/neumorphic_ui.dart';
 
 @immutable
@@ -42,11 +39,13 @@ class NeumorphicAppBarIcons {
 
   //if back icon null then get platform oriented icon
   Icon get backIcon => _backIcon ?? _getBackIcon;
+
   Icon get _getBackIcon => Platform.isIOS || Platform.isMacOS
       ? const Icon(Icons.arrow_back_ios)
       : const Icon(Icons.arrow_back);
 
   Icon get forwardIcon => _forwardIcon ?? _getForwardIcon;
+
   Icon get _getForwardIcon => Platform.isIOS || Platform.isMacOS
       ? const Icon(Icons.arrow_forward_ios)
       : const Icon(Icons.arrow_forward);

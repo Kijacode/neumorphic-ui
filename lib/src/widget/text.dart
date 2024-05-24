@@ -1,11 +1,9 @@
 import 'dart:ui' as ui show FontFeature;
 
 import 'package:flutter/material.dart' as material;
-import 'package:flutter/widgets.dart';
 import 'package:neumorphic_ui/src/decoration/neumorphic_text_decorations.dart';
 
 import '../../neumorphic_ui.dart';
-import '../theme/neumorphic_theme.dart';
 
 export '../decoration/neumorphic_decorations.dart';
 export '../neumorphic_box_shape.dart';
@@ -27,6 +25,7 @@ class NeumorphicTextStyle {
   final String? fontFamily;
   final List<String>? fontFamilyFallback;
   final String? package;
+
   //final Color color;
   //final Color backgroundColor;
   //final Paint foreground,

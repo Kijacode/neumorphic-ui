@@ -14,7 +14,7 @@ class NeumorphicDecoration extends Decoration {
   final bool renderingByPath;
   final bool isForeground;
 
-  NeumorphicDecoration({
+  const NeumorphicDecoration({
     required this.style,
     required this.isForeground,
     required this.renderingByPath,

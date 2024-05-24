@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
@@ -12,7 +11,7 @@ class NeumorphicDecorationPainter extends BoxPainter {
   final NeumorphicStyle style;
   final NeumorphicBoxShape shape;
 
-  NeumorphicPainterCache _cache = NeumorphicPainterCache();
+  final NeumorphicPainterCache _cache = NeumorphicPainterCache();
 
   late Paint _backgroundPaint;
   late Paint _whiteShadowPaint;
